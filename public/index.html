@@ -9,6 +9,8 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+   
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -39,5 +41,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    // Only set localStorage.theme if it's not already set
+    if (!localStorage.theme) {
+      // Set the theme based on user preference or any other logic
+      localStorage.theme = 'light'; // Default to light mode
+    }
+    
+    // You can add an event listener or use your preferred method to update the theme when the user explicitly changes it
+    
+    </script>
   </body>
 </html>
