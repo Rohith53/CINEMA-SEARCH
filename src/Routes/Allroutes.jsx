@@ -12,7 +12,7 @@ const Allroutes = () => {
    <Routes>
        <Route path="/" element={<MovieList apiPath={"movie/now_playing"}/>}/>
        <Route path="/movies/popular" element={<MovieList apiPath={"movie/popular"}/>}/>
-       <Route path="/movies/upcoming" element={<MovieList apiPath="movie/upcoming" />} />
+       <Route path="/movies/upcoming" element={<MovieList apiPath={"movie/upcoming"}/>} />
        <Route path="/movies/top" element={<MovieList apiPath={"movie/top_rated"}/>}/>
        <Route path="/movie/:id" element={<MovieDetails/>}/>
        <Route path="search" element={<Search apiPath={"/search/movie"}/>}/>
