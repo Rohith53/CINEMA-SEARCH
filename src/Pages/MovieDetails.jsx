@@ -56,6 +56,9 @@ const MovieDetails = () => {
     <span className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</span>
     <span className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">{data?.vote_count}</span>
 </div>
+<h1 className='flex items-center my-4'>
+ BUDGET: {data?.budget}
+</h1>
 
         </div>
       </section>
